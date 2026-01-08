@@ -20,6 +20,7 @@ Amazon Redshift is a fully managed, **petabyte-scale cloud data warehouse servic
 ## 2. Architecture Overview
 
 <img width="1794" height="824" alt="image" src="https://github.com/user-attachments/assets/f1eeeefb-8428-40a7-ae82-f965cabbaa9f" />
+Source: https://docs.aws.amazon.com/images/redshift/latest/dg/images/architecture.png
 
 
 ### 2.1 High-Level Architecture
