@@ -19,34 +19,8 @@ Amazon Redshift is a fully managed, **petabyte-scale cloud data warehouse servic
 
 ## 2. Architecture Overview
 
-graph TD
-    subgraph "Client Layer"
-        A[Client Applications<br/>BI Tools, SQL Clients, Applications]
-    end
-    
-    subgraph "Access Layer"
-        B[Redshift SQL Endpoint]
-        C[Redshift API]
-    end
-    
-    subgraph "Redshift Cluster"
-        D[Leader Node<br/>• Query Planning & Coordination<br/>• Results Aggregation<br/>• Metadata Management]
-        
-        subgraph "Compute Layer"
-            E[Compute Nodes<br/>• Parallel Query Execution<br/>• Local Columnar Storage<br/>• Slices (Data Partitioning Units)]
-        end
-    end
-    
-    subgraph "Storage Layer"
-        F[Amazon S3<br/>Backup & Optional Spectrum Data Lake]
-    end
-    
-    A --> B
-    A --> C
-    B --> D
-    C --> D
-    D --> E
-    E --> F
+<img width="1794" height="824" alt="image" src="https://github.com/user-attachments/assets/f1eeeefb-8428-40a7-ae82-f965cabbaa9f" />
+
 
 ### 2.1 High-Level Architecture
 Amazon Redshift follows a **cluster-based architecture** composed of a *leader node* and one or more *compute nodes*.
